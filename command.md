@@ -1,0 +1,39 @@
+## Vim Editor command important
+
+:set noscrollbind ==> to setup no scroll binding between two files
+:ctlr + ww ==> to uses to switches between to files and more than two files
+:set scrollbind ==> to set scroll bind of two files at same time
+:diff get ==> to get values of one file into another file go into that one and apply it
+:diff put ==> to put values of one file into another file go into that one and apply it
+:diff update ==> to update current condition of one file and rest of things
+:lowercase u ==> to reset states uses it
+: exit ==> for exit 
+: qa ==> shortcut for quit all
+vimdiff -o file1.txt file2.txt => two view two files in one up with second down 
+vimdiff file1.txt file2.txt ==> to views two files one along with second
+/word ==> to search word
+ctlr + G => to go bottom line
+gg => to move up
+?word => to search from bottom 
+:%s/word1/word2/g ==> to replace word1 with word2 in full file ==> s for substite => for global change
+ctlr +  r => redo
+o => to add something in line second by current location
+shift + o => add something in line to upper it 
+shift + i => editing from starting line 
+shift + A => to move end of line 
+x => to remove one character 
+r => to remove single character 
+dd => to remove one line 
+:e! => to revert all changes done by you 
+p => to paste cut line by simple p press
+shift + p => to paste cut line from above current line 
+shift + v => to copy content
+v => to copy simple single word
+y => to copy selected text 
+: set nu => to set line number in vim files 
+: set nonu => to reset line number in vime files 
+: syntax on ==> to set coloring on in text 
+: syntax off => to reset coloring on in vim text 
+: nu ==> after adding number to jump directly on files 
+vim -d filex1 files  => -d for difference 
+vim -o file.txt file2.txt => to check file one up second
