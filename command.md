@@ -1,39 +1,57 @@
 ## Vim Editor command important
 
-- `:set noscrollbind` ==> to setup no scroll binding between two files
-- `:ctlr + ww` ==> to uses to switches between to files and more than two files
-- `:set scrollbind` ==> to set scroll bind of two files at same time
-- `:diffget` ==> to get values of one file into another file go into that one and apply it
-- `:diffput` ==> to put values of one file into another file go into that one and apply it
-- `:diff update` ==> to update current condition of one file and rest of things
-- `:lowercase u` ==> to reset states uses it
-- `exit` ==> for exit 
-- `:qa` ==> shortcut for quit all
-- `vimdiff -o file1.txt file2.txt` => two view two files in one up with second down 
-- `vimdiff file1.txt file2.txt` ==> to views two files one along with second
-- `/word` ==> to search word
-- `G` => to go bottom line
-- `gg` => to move up
-- `?word` => to search from bottom 
-- `:%s/word1/word2/g` ==> to replace word1 with word2 in full file ==> s for substite => for global change
-- `ctlr +  r` => redo
-- `o` => to add something in line second by current location
-- `shift + o` => add something in line to upper it 
-- `shift + i` => editing from starting line 
-- `shift + A` => to move end of line 
-- `x` => to remove one character 
-- `r` => to remove single character 
-- `dd` => to remove one line 
-- `:e!` => to revert all changes done by you 
-- `p` => to paste cut line by simple p press
-- `shift + p` => to paste cut line from above current line 
-- `shift + v` => to copy content
-- `v` => to copy simple single word
-- `y` => to copy selected text 
-- `:set nu` => to set line number in vim files 
--  `:set nonu` => to reset line number in vim files 
-- `:syntax on` ==> to set coloring on in text 
--  `:syntax off` => to reset coloring on in vim text 
-- `:nu` ==> after adding number to jump directly on files 
-- `vim -d filex1 files`  => -d for difference 
-- `vim -o file.txt file2.txt` => to check file one up second
+# Navigation
+
+- `gg`: Go to the first line.
+- `G`: Go to the last line.
+- `:nu + Enter`: Go to a specific line number (e.g., :25 + Enter).
+- `Ctrl + w w`: Switch between windows (useful in split-screen mode).
+- `/word`: Search forward for "word".
+- `?word`: Search backward for "word".
+- 
+# Editing
+
+- `i`: Insert text before the cursor.
+- `a`: Append text after the cursor.
+- `o`: Open a new line below the current line and insert text.
+- `Shift + o`: Open a new line above the current line and insert text.
+- `Shift + i`: Insert at the beginning of the current line.
+- `Shift + a`: Append at the end of the current line.
+- `x`: Delete the character under the cursor.
+- `dd`: Delete the current line.
+- `r`: Replace the character under the cursor.
+- `:%s/word1/word2/g`: Replace all occurrences of "word1" with "word2" in the file.
+- `Ctrl + r`: Redo the last undone change.
+- `u`: undo last change.
+- `:e!`: Revert all changes since the last save.
+# Copying and Paste
+
+- `v` : Visual mode (character-wise selection).
+- `Shift + v `: Visual line mode (line-wise selection).
+- `y` : Yank (copy) the selected text.
+- `p`: Paste after the cursor.
+- `Shift + p`: Paste before the cursor.
+- 
+# File Management
+- `:w` : Save the file.
+- `:q` : Quit Vim.
+- `:wq` or `:x` : Save and quit.
+- `:qa` : Quit all open buffers.
+- 
+# Diffing
+
+- `vimdiff file1.txt file2.txt`: Open files in diff mode (side-by-side).
+- `vimdiff -o file1.txt file2.txt`: Open files in diff mode (horizontal split).
+- `:diffget`: Get changes from the other diff window.
+- `:diffput`: Put changes to the other diff window.
+- `:diffupdate`: Update diff information.
+- `:set scrollbind`: Enable synchronized scrolling in diff mode.
+- `:set noscrollbind`: Disable synchronized scrolling in diff mode.
+- 
+# Appearance
+
+- `:set nu`: Enable line numbers.
+- `:set nonu`: Disable line numbers.
+- `:syntax on`: Enable syntax highlighting.
+- `:syntax off`: Disable syntax highlighting.
+
