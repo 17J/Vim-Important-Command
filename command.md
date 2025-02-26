@@ -1,10 +1,10 @@
 ## Vim Editor command important
 
-- `:set` noscrollbind ==> to setup no scroll binding between two files
+- `:set noscrollbind` ==> to setup no scroll binding between two files
 - `:ctlr + ww` ==> to uses to switches between to files and more than two files
 - `:set scrollbind` ==> to set scroll bind of two files at same time
-- `:diff get` ==> to get values of one file into another file go into that one and apply it
-- `:diff put` ==> to put values of one file into another file go into that one and apply it
+- `:diffget` ==> to get values of one file into another file go into that one and apply it
+- `:diffput` ==> to put values of one file into another file go into that one and apply it
 - `:diff update` ==> to update current condition of one file and rest of things
 - `:lowercase u` ==> to reset states uses it
 - `exit` ==> for exit 
@@ -12,7 +12,7 @@
 - `vimdiff -o file1.txt file2.txt` => two view two files in one up with second down 
 - `vimdiff file1.txt file2.txt` ==> to views two files one along with second
 - `/word` ==> to search word
-- `ctlr + G` => to go bottom line
+- `G` => to go bottom line
 - `gg` => to move up
 - `?word` => to search from bottom 
 - `:%s/word1/word2/g` ==> to replace word1 with word2 in full file ==> s for substite => for global change
