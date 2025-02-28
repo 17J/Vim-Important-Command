@@ -1,4 +1,4 @@
-# Vim Essential Commands
+# Vim Essential Commands For VIM Editor
 
 This document provides a concise list of essential Vim commands for daily use, categorized for easy reference.
 
